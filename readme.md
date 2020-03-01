@@ -160,9 +160,5 @@ The meanings of the options are:
 
 
 #Ackownledge
-* [xiaoning](mailto:dxn0733@gmail.com)
-* [wangjian](mailto:jornbowrl@gmail.com)
-* [xiaofei](mailto:xiaofei.xfxie@gmail.com)
-* [malei](mailto:leima.2011@gmail.com)
 
 
