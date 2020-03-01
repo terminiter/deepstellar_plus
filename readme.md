@@ -49,7 +49,7 @@ To get better results, please select better automaton. More detail pls check in 
 export PYTHONPATH=`pwd`
 conda activate deepstellar_mnist  
  #tf>1.4.0
-python  deepstellar/applications/generate_abstrac_model.py -dl_model `pwd`/deepstellar_data/mozilla_deepspeech_models_0.3.1/ -profile_data `pwd`/deepstellar_data/audio_seed/  -profile_save_path `pwd`/deepstellar_data/audio_vectors -k 2 -m 3 -name_prefix deepspeech -abst_save_path `pwd`/deepstellar_data/audio_abst
+python  deepstellar/applications/generate_abstrac_model.py -dl_model `pwd`/deepstellar_data/mozilla_deepspeech_models_0.3.0/ -profile_data `pwd`/deepstellar_data/audio_seed/  -profile_save_path `pwd`/deepstellar_data/audio_vectors -k 2 -m 3 -name_prefix deepspeech -abst_save_path `pwd`/deepstellar_data/audio_abst
 ```
 
 
