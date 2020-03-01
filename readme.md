@@ -30,6 +30,8 @@ This directory contains the use cases including the image classification for mni
 ### Install and prepare data [tiny size for tutorial] 
 ```
 cd /home/lyk/workspace/deepstellar_xiaoning_pc
+# if file not exist, pls download 
+wget https://github.com/jornbowrl/deepstellar_plus/raw/master/init_env/init.sh
 sh init.sh 
 ```
 
