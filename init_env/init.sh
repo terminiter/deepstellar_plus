@@ -47,6 +47,17 @@ else
 fi 
 
 
+if [ -d "./deepstellar_data/dlfuzzer_data/" ]
+then
+        echo "exits ./deepstellar_data/audio_seed/ deepstellar_data/dlfuzzer_data/deepspeech_detector.pkl"
+else
+    mkdir -p ./deepstellar_data/dlfuzzer_data/
+    wget https://github.com/jornbowrl/deepstellar_plus/raw/master/data/dlfuzzer_data/deepspeech_detector.pkl -P ./deepstellar_data/dlfuzzer_data/
+
+
+fi
+
+
 
 
 
