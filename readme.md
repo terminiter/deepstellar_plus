@@ -114,7 +114,16 @@ RQ: it will show the pattern for Adversarial Sample Detection
 conda activate deepspeech_0.3.0
 python -c "import tensorflow as tf ;print (tf.__version__);" 
 
+
+# which python 
+export python_exe=`which python`
+export LD_LIBRARY_PATH=$python_exe/../../lib/python3.6/site-packages/tensorflow/:$LD_LIBRARY_PATH
+export PYTHONPATH=`pwd`
+
+# assert tf.__version__ =="1.4.0"
 ```
+
+**this is important to goto 1.4.0 tf, because we just adapte the libctc_decoder_with_kenlm.so in tf_1.40 and deepspeech_0.1.1** 
 
 * step-3.2(good): calculate the metrics for goodcase inputs
 
@@ -129,7 +138,7 @@ python deepstellar/applications/classify_adv.py -dl_model `pwd`/deepstellar_data
 python deepstellar/applications/classify_adv.py -dl_model `pwd`/deepstellar_data/mozilla_deepspeech_models_0.1.1/  -ref_sample ./text2speech_adv.wav   -abst_model `pwd`/deepstellar_data/audio_abst/wrapper_deepspeech2_3_10.pkl -decoder_library  /home/lyk/deepspeech_binary/lib/libctc_decoder_with_kenlm.so -lm_binary `pwd`/deepstellar_data/mozilla_deepspeech_models_0.1.1/lm.binary -trie `pwd`/deepstellar_data/mozilla_deepspeech_models_0.1.1/trie -sample `pwd`/deepstellar_data/audio_adv_samples/sample-001606-1.wav
 
 ```
-* step-2.0 to step-2.1 different in last audio filename ,change from sample-001606-0.wav to sample-001606-1.wav
+* the different  between step-2.0 with step-2.1 is the last audio filename, which change from "sample-001606-0.wav" to "sample-001606-1.wav"
 
  
 
@@ -147,8 +156,10 @@ The meanings of the options are:
 
 
 
-
-
-
+#Ackownledge
+* [xiaoning](mailto:dxn0733@gmail.com)
+* [wangjian](mailto:jornbowrl@gmail.com)
+* [xiaofei](mailto:xiaofei.xfxie@gmail.com)
+* [malei](mailto:leima.2011@gmail.com)
 
 
