@@ -62,6 +62,7 @@ trace of a sample
 
 python visiualizer.py -abst_model output/dtmc_models/wrapper_mnist_lstm_2_3.pkl -type model -save_folder  output/visiualization/
 ```
+the DTMC model's graph will save in "output/visiualization/model.gv.pdf"
 
  * 2.2, Visualize the PCA cluster 
 
@@ -69,6 +70,8 @@ python visiualizer.py -abst_model output/dtmc_models/wrapper_mnist_lstm_2_3.pkl 
 ```
 python visiualizer.py -abst_model output/dtmc_models/wrapper_mnist_lstm_2_3.pkl  -type trace -save_folder output/visiualization/  -dl_model saved_lstm_model/mnist-lstm-model.h5   -sample prepared_mnist_samples/samples_to_visualize/test_2.png 
 ```
+the "test_2.png" hidden state's PCA model's graph will save in "output/visiualization/pca_trace_test_2.pdf"
+
 
 **To reproduce the similar results for paper, please set -k and -m same as paper 
 In the following , please select the better automaton which has m components (by setting -components m) 
