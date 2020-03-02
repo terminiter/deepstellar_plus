@@ -33,7 +33,7 @@ conda activate deepstellar_mnist
 cd /home/lyk/workspace/deepstellar_xiaoning_pc
 cd deepstellar_img_demo
 
-python  deepstellar/applications/generate_abstrac_model.py -dl_model `pwd`/output/mozilla_deepspeech_models_0.3.0/  -profile_save_path `pwd`/output/audio_vectors -k 2 -m 3 -name_prefix deepspeech -abst_save_path `pwd`/output/audio_abst
+python  generate_abst_model.py -dl_model saved_lstm_model/mnist-lstm-model.h5   -profile_save_path output/profile_save  -k 2 -m 3 -name_prefix mnist_lstm  -abst_save_path output/dtmc_models 
 ```
 
 The meanings of the options are:
