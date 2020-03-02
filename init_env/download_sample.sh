@@ -1,6 +1,12 @@
 #!/bin/bash 
 
+if [ -d "./deepstellar/applications/transcribe.py" ]
+then
+    echo "exist : deepstellar/applications/transcribe.py"
 
+else
+    wget -c https://raw.githubusercontent.com/jornbowrl/deepstellar_code/master/deepstellar/applications/transcribe.py -P deepstellar/applications/
+fi 
 
 if [ -d "./deepstellar_data/audio-samples/" ]
 then
