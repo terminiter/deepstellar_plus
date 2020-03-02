@@ -1,4 +1,4 @@
-Deepstellar Speech 
+Deepstellar Image 
 ======
 This repository contains our model-based analysis framework for the RNN .
 
