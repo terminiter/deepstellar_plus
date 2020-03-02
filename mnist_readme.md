@@ -35,7 +35,7 @@ cd deepstellar_img_demo
 
 python  generate_abst_model.py -dl_model saved_lstm_model/mnist-lstm-model.h5   -profile_save_path output/profile_save  -k 2 -m 3 -name_prefix mnist_lstm  -abst_save_path output/dtmc_models 
 ```
-
+the abstract model will save in "output/dtmc_models/wrapper_mnist_lstm_2_3.pkl"
 The meanings of the options are:
 
 1. `-k` determines the number of dimensions to be reduced by PCA
